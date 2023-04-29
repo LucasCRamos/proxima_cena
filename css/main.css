@@ -1,0 +1,333 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'StorianRegular';
+    src: url("../fontes/VarelaRound-Regular-Storian.otf");
+}
+@font-face {    
+    font-family: 'StorianMedium';
+    src: url("../fontes/VarelaRound-Medium-Storian.otf");
+}
+@font-face{ 
+    font-family: 'StorianExtraBold';
+    src: url("../fontes/VarelaRound-ExtraBold-Storian.otf");
+}
+@font-face {
+    font-family: 'StorianBlack';
+    src: url("../fontes/VarelaRound-Black-Storian.otf");
+}
+@font-face{
+    font-family: 'VarelaRound';
+    src: url("../fontes/VarelaRound-Regular.ttf");
+}
+
+/*Um outro reset por precaução*/
+*{margin: 0; padding: 0; font-size: 100%; box-sizing: border-box;}
+
+body{
+    /*font-family: "Arial", "Lucida Sans Unicode", Verdana,sans-serif;*/
+    background-color: #f8e1b0;
+    color: #ffffff;
+   }
+
+section {
+    padding: 40px 150px 40px 150px;
+    
+}
+.interface {
+    display: block;
+    /*max-width: 1920px;*/
+    margin: 0px auto 0px auto;
+}
+
+/*---------------------------------Formatando os títulos-----------------------------------------*/
+.lefttitulos {
+    font-family: 'VarelaRound';
+    text-align: left;
+    font-size: 35pt;
+}
+.leftsubtitulos {
+    font-family: 'StorianRegular';
+    text-align: left;
+    font-size: 20pt;
+}
+.righttitulos {
+    font-family: 'StorianMedium';
+    text-align: right;
+    font-size: 35pt;
+}
+.rightsubtitulos {
+    font-family: 'StorianRegular';
+    text-align: right;
+    font-size: 20pt;
+}
+/*-------Tentativa de diminuir o tamanho da fonte conforme o redimensionamento da janela-------*/
+@media (max-width: 870px) {
+    .righttitulos {font-size: 33pt;} 
+    .rightsubtitulos {font-size: 19pt;} 
+    .lefttitulos {font-size: 33pt;} 
+    .leftsubtitulos {font-size: 19pt;} 
+}
+@media (max-width: 712px) {
+    .righttitulos {font-size: 31pt;}  
+    .rightsubtitulos {font-size: 17pt;}   
+    .lefttitulos {font-size: 31pt;} 
+    .leftsubtitulos {font-size: 17pt;}
+}
+@media (max-width: 572px) {
+    .righttitulos {font-size: 29pt;} 
+    .rightsubtitulos {font-size: 15pt;}  
+    .lefttitulos {font-size: 29pt;} 
+    .leftsubtitulos {font-size: 15pt;}  
+}
+@media (max-width: 450px) {
+    .righttitulos {font-size: 27pt;}    
+    .rightsubtitulos {font-size: 13pt;} 
+    .lefttitulos {font-size: 27pt;} 
+    .leftsubtitulos {font-size: 13pt;}
+}
+/*_______________________________________________________________________________________________*/
+
+
+a:link {
+   text-decoration: none;
+}
+/*________________________________________Fim____________________________________________________*/
+
+          
+                                        /*Section1*/
+/*-----------------------------------Div "text_mobile1"-----------------------------------------*/
+.text_mobile1{
+    max-width: auto;
+    padding-bottom: 10px;
+}
+/*_________________________________________________________________________________________*/
+
+/*---------------------------------Div "rede"--------------------------------------------------*/
+/*Importando a imagem do Google Play para o bloco "rede"*/
+.google1 {
+    display: inline-flex;
+    float: left;
+    background-image: url("../imagens/google.svg"); 
+    margin: 20px 0px 20px 0px;  /*Define todas as margens de objeto..., começando do topo no sentido horário */
+    width: 182px;
+    height: 55px;
+}
+/*_______________________________________Fim_____________________________________________________*/
+
+/*---------------------------------------Div "googletexto1"----------------------------------*/
+.googletexto1 {
+    display:flex;
+    width: 780px;
+    justify-content: space-evenly;
+    align-items: left;
+    flex-direction: column;
+    padding: 30px;
+    
+}
+/*________________________________________________________________________________________*/
+
+/*----------------------------------------Div "mobile"-------------------------------------*/
+/*Importando a imagem do celular em todos os blocos "mobile"*/
+.rightmobile {
+    display: inline-flex;
+    background-image: url("../imagens/mobileStorian.svg");
+    min-width: 280px;
+    min-height: 578px;
+    margin: 0px 30px 0px 30px;
+}
+.leftmobile {
+    display: inline-flex;
+    background-image: url("../imagens/mobileStorian.svg");
+    min-width: 280px;
+    min-height: 578px;
+    margin: 0px 30px 0px 30px;
+}
+img.gif1 {
+    display: inline-flex;
+    margin: 37px 0px 0px 10px;
+    max-width: 260px;
+    max-height: 505px;
+}
+
+img.gif2 {
+    display: inline-flex;
+    margin: 37px 0px 0px 9px;
+    max-width: 261px;
+    max-height: 505px;
+}
+img.homescreen {
+    display: inline-flex;
+    margin: 37px 0px 0px 9px;
+    max-width: 261px;
+    max-height: 505px;
+}
+/*.animation2{
+    display: inline-flex;
+    margin: 16px 0px 0px 9px;
+    max-width: 261px;
+    max-height: 500px;
+}
+.animation{
+    display: inline-flex;
+    margin: 13px 0px 0px 10px;
+    max-width: 260px;
+    max-height: 500px;
+}*/
+/*___________________________________________Fim___________________________________________*/
+
+/*-------------------------------------Section "vantagem1"----------------------------------------*/
+/*Tornar responsivo as div "googletexto1" e "mobile"*/
+.vantagem1 {
+    top: 0;
+    left:0;
+    background-color: #4285f4;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-width: 280px;
+}
+/*Alinha os itens ao centro quando a largura da tela muda para 956px*/
+/*Como "titulos" e "subtitulos" é uma classe relacionada para todos os titulos de sections, então esse processo pode ser feito apenas uma vez no código*/
+@media (max-width: 1000px) {
+    section {padding: 40px 10px 40px 10px;}
+    .vantagem1 {flex-direction: column;}
+    .googletexto1 {align-items: center; padding-top:0px; width: auto;}
+    .lefttitulos {text-align: center;}
+    .leftsubtitulos {text-align: center;}
+    .righttitulos {text-align: center;}
+    .rightsubtitulos {text-align: center;}
+}
+/*_______________________________________________________________________________________________*/
+
+
+                                        /*Section2*/
+/*-----------------------------------Div "text_mobile2"-----------------------------------------*/
+.text_mobile2 {
+    max-width: auto;
+}
+/*_________________________________________________________________________________________*/
+
+/*---------------------------------------Div "googletexto2"----------------------------------*/
+.googletexto2 {
+    display:flex;
+    width: 780px;
+    justify-content: space-evenly;
+    align-items: right;
+    flex-direction: column;
+    padding: 30px;
+}
+/*__________________________________________________________________________________________*/
+
+/*------------------------------------------Section "vantagem2"----------------------------------*/
+.vantagem2 {
+    background-color: #2eb77c;
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    min-width: 280px;
+}
+@media (max-width: 1000px) {
+    .vantagem2 {flex-direction: column; padding-top:0px;}
+    .googletexto2 {width: auto;}
+}
+
+
+                                        /*Section3*/
+/*-------------------------------------Div "text_mobile3"-----------------------------------------*/
+.text_mobile3 {
+    max-width: auto;
+}
+/*_________________________________________________________________________________________*/
+
+/*---------------------------------------Div "googletexto3"----------------------------------*/
+.googletexto3 {
+    display:flex;
+    width: 780px;
+    justify-content: space-evenly;
+    align-items: left;
+    flex-direction: column;
+    padding: 30px;
+}
+/*__________________________________________________________________________________________*/
+
+/*------------------------------------------Section "vantagem3"----------------------------------*/
+.vantagem3 {
+    background-color: #e11e5a;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-width: 280px;
+}
+@media (max-width: 1000px) {
+    .vantagem3 {flex-direction: column; padding-top:0px;}
+    .googletexto3 {width: auto;}
+}
+/*________________________________________________________________________________________________*/
+
+
+                                        /*Section4*/
+/*-----------------------------------Div "googletexto4"----------------------------------*/
+.googletexto4 {
+    display:flex;
+    width: 780px;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: right;
+    padding: 30px; 
+}
+/*__________________________________________________________________________________________*/
+
+/*-------------------------------------------Div "google2"----------------------------------*/
+.google2 {
+    display: inline-flex;
+    float: right;
+    background: url("../imagens/google.svg") no-repeat; 
+    margin: 30px 0px 20px 0px;  
+    width: 182px;
+    height: 55px;
+}
+/*_________________________________________________________________________________________*/
+
+/*------------------------------------------Section "vantagem4"----------------------------------*/
+.vantagem4 {
+    background-color: #fbbc05;
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    min-width: 280px;
+}
+@media (max-width: 1000px) {
+    .vantagem4 {flex-direction: column; padding-top:0px}
+    .googletexto4 {align-items: center; width: auto;}
+}
+
+.text_mobile4 {
+    max-width: auto;
+}
+/*________________________________________________________________________________________________*/
+
+
+                                                /*Rodapé*/
+footer{
+    display: block;
+    min-width: 280px;
+    padding: 20px 0px 30px 0px;
+    background-color: #e11e5a;
+}
+footer#rodape p {
+    font-family: 'StorianRegular';
+    font-size: 10pt;
+    text-align: center;
+}
+#storian {
+    font-family: 'StorianExtraBold';
+    font-size: 12pt;
+}
+@media (max-width: 572px) {
+   footer#rodape p {font-size: 9pt;}
+}
+@media (max-width: 572px) {
+    #storian {font-size: 11pt;}
+}
